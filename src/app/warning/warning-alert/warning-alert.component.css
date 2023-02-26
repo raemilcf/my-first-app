@@ -1,0 +1,22 @@
+.box-warning{
+    border-radius: 5px;
+    background-color: rgb(250, 161, 28);
+   padding-top: 5px;
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   width: fit-content;
+   block-size: fit-content;
+   color: white;
+   
+}
+.text-warning{
+    color: white !important;
+    margin: 2px 5px 5px 5px;
+    
+}
+
+.small {
+    width: 20px;
+    height: 20px;
+}

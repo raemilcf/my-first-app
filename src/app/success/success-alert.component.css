@@ -1,0 +1,22 @@
+.box-success{
+    border-radius: 5px;
+    background-color: rgb(178, 232, 98);
+   padding-top: 5px;
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   width: fit-content;
+   block-size: fit-content;
+   color: white;
+   
+}
+.text-success{
+    color: white !important;
+    margin: 2px 5px 5px 5px;
+    
+}
+
+.small {
+    width: 20px;
+    height: 20px;
+}
