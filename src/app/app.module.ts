@@ -8,6 +8,7 @@ import { ServersComponent } from './servers/servers/servers.component';
 import { WarningAlertComponent } from './warning/warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success/success-alert.component';
 import { IconsModule } from './icons/icons.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { IconsModule } from './icons/icons.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IconsModule
+    IconsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
