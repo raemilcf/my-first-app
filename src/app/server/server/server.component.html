@@ -1,2 +1,5 @@
 <!-- string interpolation if in curly bracket must return a string  -->
 <p>This is {{ServerName}} with ID: {{ServerId}}  Current Status: {{ServerStatus}} </p>
+
+
+<p [ngStyle]="{background: getcolor()}" [ngClass]="{online:ServerStatus==='Active'}">This is {{ServerName}} with ID: {{ServerId}}  Current Status: {{ServerStatus}} </p>

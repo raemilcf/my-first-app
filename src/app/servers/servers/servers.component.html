@@ -1,7 +1,4 @@
 
-<div app-server></div>
-<hr>
-
 <!-- string interpolation {{data}} -->
 <!--property binding  [property ]="data"-->
 <!-- event binding (event)= "expresion" -->
@@ -22,8 +19,12 @@
            
             <br>
             <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add new server</button>
-            <p>{{serverCreated}}</p>
+            <!-- estructural directive  -->
+            <p *ngIf="isServerCreated; else noServer" >{{serverCreated}}</p>
 
+            <ng-template #noServer>
+                <p>No server Created</p>
+            </ng-template>
            
 
             <!-- example of string interpolation which is different to databinding {{}}-->
@@ -60,3 +61,10 @@
 
 </div>
 
+
+<div class="container">
+    <div class="row">
+        <app-server *ngFor="let server of servers"></app-server>
+    </div>
+
+</div>

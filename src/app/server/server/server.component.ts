@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: '[app-server]',
+  selector: 'app-server',
   templateUrl: './server.component.html',
   styleUrls: ['./server.component.css']
 })
@@ -13,10 +13,17 @@ export class ServerComponent implements OnInit {
 
 ngOnInit(){
 
+  setTimeout(() => {
+    this.ServerStatus="Inactive";
+  }, 2000);
+
 }
 
     getServerStatus  (){
       this.ServerStatus;
 
+    }
+    getcolor(){
+      return this.ServerStatus === 'Active' ? "green" : "red";
     }
 }
