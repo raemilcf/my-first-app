@@ -12,6 +12,8 @@ export class ServersComponent implements OnInit {
   userName:string ="";
   isServerCreated: boolean= false;
 
+  showDetails: boolean=false;
+  logClickDetails : string[] =[];
 
   servers: string[] = ["server1", "server 2", "server 3"];
 
@@ -36,5 +38,10 @@ onUpdateServerName(event : Event ){
 emptyUsername(){
   this.userName="";
 
+}
+
+displayDetails(){
+  this.showDetails= !this.showDetails;
+  this.logClickDetails.push(new Date().toUTCString());
 }
 }

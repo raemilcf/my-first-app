@@ -68,3 +68,28 @@
     </div>
 
 </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <button class="btn btn-secondary"  (click)="displayDetails()">Display Details</button>
+        </div>
+   
+    </div>
+    <p [hidden]="showDetails">Secret Password= tuna</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Display Details Clicks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let log of logClickDetails; index as indexcount" >
+                <td [ngStyle]="{background : indexcount> 4 ? 'red' : 'blue' }" >{{log}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
